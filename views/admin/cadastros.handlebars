@@ -1,0 +1,15 @@
+<h2>Lista de Cadastros: </h2>
+<hr>
+<a href="/admin/cadastros/add"<button class="btn btn-danger">Novo cadastro</button></a>
+
+{{#each cadastros}}
+    <div class = "card mt-4">
+        <div class="card-body">
+            <h4>{{nome}}</h4>
+            <h4>{{sobrenome}}</h4>
+            <h5>{{email}}</h5>
+        </div>
+    </div>
+{{else}}
+
+{{/each}}
